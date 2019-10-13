@@ -1,0 +1,7 @@
+<div class="item">
+    <h3 [ngStyle]="{
+      'color': title.length > 10 ? 'red' : 'black'
+    }">{{title}}</h3>
+    <button (click)='changeTitle()'>Click</button>
+    <input type="text" [(ngModel)]='title' (ngModelChange)="changeInput()">
+</div>
